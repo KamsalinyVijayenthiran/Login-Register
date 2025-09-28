@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel = "stylesheet" href = "loginRegister.css">
+</head>
+<body>
+    <!-- Login Form-->
+    <div class="container">
+        <div class="curved-shape"></div>
+        <div class="curved-shape2"></div>
+        <div class="form-box login" id="Login">
+            <h2 class="animation" style="--D:0; --S:21">Login</h2>
+            <form action="Login.php" method="post">
+                <!-- username -->
+                <div class="input-box animation" style="--D:1; --S:22">
+                    <input type="text" id="username" name="username" required>
+                    <label for="username">Username</label>
+                    <span>👤</span>
+                </div>
+                <!-- password -->
+                <div class="input-box animation" style="--D:2; --S:23">
+                    <input type="password" id="password" name="password" required>
+                    <label for="password">Password</label>
+                    <span>🔒</span>
+                </div>
+                <!-- submit button -->
+                <div class="input-box animation" style="--D:3; --S:24">
+                    <a class="btn" href="../Application/Form.html">Login</a>
+                </div>
+                <!-- register link-->
+                <div class="register-link animation" style="--D:4; --S:25">
+                    <p>Don't have an account? <a href="#" class="SignUpLink">Register here</a></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="info-content login">
+            <h2 class="animation" style="--D:0; --S:20">Welcome Back!</h2>
+            <p class="animation" style="--D:1; --S:21">Access internships, job opportunities, and resources by logging into your account.</p>
+        </div>
+
+        <!-- Register Form-->
+        <div class="form-box register">
+            <h2 class="animation" style="--li:17; --S:0">Register</h2>
+            <form action="Register.php" method="post">
+                <!-- username -->
+                <div class="input-box animation" style="--li:18; --S:1">
+                    <input type="text" id="reg-username" name="username" required>
+                    <label for="reg-username">Username</label>
+                    <span>👤</span>
+                </div>
+                <!-- email -->
+                <div class="input-box animation" style="--li:19; --S:2">
+                    <input type="email" id="reg-email" name="email" required>
+                    <label for="reg-email">Email</label>
+                    <span>✉</span>
+                </div>
+                <!-- password -->
+                <div class="input-box animation" style="--li:20; --S:3">
+                    <input type="password" id="reg-password" name="password" required>
+                    <label for="reg-password">Password</label>
+                    <span>🔒</span>
+                </div>
+                <!-- submit button -->
+                <div class="input-box animation" style="--li:21; --S:4">
+                    <a class="btn" href="#Login">Register</a>
+                </div>
+                <!-- Login link-->
+                <div class="register-link animation" style="--li:22; --S:5">
+                    <p>Do you have an account? <a href="#" class="SignInLink">Login here</a></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="info-content register">
+            <h2 class="animation" style="--li:17; --S:0">Welcome Back!</h2>
+            <p class="animation" style="--li:18; --S:1">Access internships, job opportunities, and resources by logging into your account.</p>
+        </div>
+    </div>
+
+    <script src="LoginRegister.js"></script>
+        
+</body>
+</html>
